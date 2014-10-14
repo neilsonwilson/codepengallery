@@ -1,4 +1,3 @@
-# One Month Rails
+# CodePen Gallery
 
-This is the whatever sample app for
-[*One Month Rails*] (free advertising for you)
+Learning rails son
