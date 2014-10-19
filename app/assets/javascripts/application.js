@@ -9,9 +9,13 @@
 //
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
-//
-//= require jquery
-//= require jquery_ujs
-//= require bootstrap
-//= require turbolinks
-//= require_tree .
+// 
+// = require jquery
+// = require jquery_ujs
+// = require bootstrap
+// = require turbolinks
+
+//sanity check that js is working
+// alert('Javascript checking in');
+// var slides, slides_total, slide_current;
+
