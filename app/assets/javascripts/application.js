@@ -15,7 +15,3 @@
 // = require bootstrap
 // = require turbolinks
 
-//sanity check that js is working
-// alert('Javascript checking in');
-// var slides, slides_total, slide_current;
-

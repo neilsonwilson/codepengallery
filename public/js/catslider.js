@@ -1,7 +1,8 @@
 //
 var slides, slides_total, slide_current;
 // means to execute the code only once the document has finished loading
-document.addEventListener('DOMContentLoaded', function(){
+
+function changeCats (){
 	// get the pictures!
 	slides = document.getElementsByClassName('col-sm-12');
 	// how many pictures are there?
@@ -22,8 +23,13 @@ document.addEventListener('DOMContentLoaded', function(){
 		//log the slide to the console so for confirmation
 		console.log(slide_current);
 		//do this every 3s
-		}, 200);
-});
+		}, 300);
+}
+
+document.addEventListener('page:load', changeCats);
+document.addEventListener('ready', changeCats);
+
+// document.saddEventListener('DOMContentLoaded', changeCats);
 // helper functino takes a slide as input
 function changePicture(slide){
 	// iterate though all slides

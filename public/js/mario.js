@@ -71,7 +71,7 @@ var config = {
         height: window.innerHeight
     },
     loop: {
-        interval: 50
+        interval: 100
     },
     drawPattern: function(ctx){
         ctx.beginPath();
