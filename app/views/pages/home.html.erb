@@ -1,28 +1,17 @@
-<!-- taken from http://codepen.io/deluxive/pen/lxEGs -->
-
-<%= stylesheet_link_tag 'homealt.css', media: 'all', 'data-turbolinks-track' => true %>
-
-<link href="http://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css">
-
-<div id="content">
-<div id="wargames">
-<pre><code>
-
-ò¢) ;(q OW¶e ¥5PL@l¢ª $VÿPú·z7ãàè
-„ÿÕ±ÿ:,>˛¡ñﬂ§OW¶e ESCAPEISADELUSION¥5PL@l¢ª $VÿPú·z7ãàè ˛¡ñﬂ§N›äg] £‚´)ÿ:,>˛¡ñﬂ§N›äg]™Ü- ÉDò¢) ;(q OW¶e ¥5PL@l¢ª 
- ¥5PL@l¢ª $VÿPú·z7ãàè „ÿÕ±˘Lf®ºõÂƒÀ N‚8)@tzΩ°Œ ¯LìÏÂt<´¯ŒÀú,}+ç—5y˙i4™}ÓC3ÏV §¢ú£à√—¯´˝nY~qÒrßﬂV≥a˙òùnR…U<'Øät‚e∆F◊Ùs2ﬁ0FúﬁB ë€f|ß}Ñ9C $G˚eV"#8AÜ«
 
 
 
-Would you like to play a game?
+<div class="jumbotron center">
 
+	<h1>Loading</h1>
+	
+	<% if user_signed_in? == true %>
+		#do something
+	<% else %>
+		<%= link_to "Login", new_user_session_path, class: "btn btn-primary" %>	
+		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-danger" %>
+	<% end %>
 
-
-
-</pre></code> 
-<h2></h2>
 </div>
-</div>
-
 
 
