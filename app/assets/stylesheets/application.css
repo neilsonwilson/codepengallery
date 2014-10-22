@@ -16,6 +16,6 @@
 @import 'bootstrap';
 
 
-.image2, .image3 {
+.image2, .image3 .catimage {
 	display: none;
 }
