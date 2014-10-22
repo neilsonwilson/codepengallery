@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	  console.log(slide_current);
 	  changePicture(slide_current);
 	  ga("send", "event", "slider", "clicknext", "click the next button", 1);
+	  mixpanel.track("HELLOAFHOAFHE");
 	});
 
 	document.getElementsByClassName('reset')[0].addEventListener('click', function () {
