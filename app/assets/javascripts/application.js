@@ -17,6 +17,8 @@
 
 var slides, slides_total, slide_current;
 
+
+
 document.addEventListener('DOMContentLoaded', function(){
 
 	slides = document.getElementsByClassName('catimage');
@@ -35,15 +37,15 @@ document.addEventListener('DOMContentLoaded', function(){
 	});
 
 	document.getElementsByClassName('next')[0].addEventListener('click', function () {
-	  if(slide_current < (slides_total -1)){
+	  if(slide_current < (slides_total - 1)){
 	    slide_current++;
 	  }else{
 	    slide_current = 0;
 	  }
 	  console.log(slide_current);
 	  changePicture(slide_current);
-	  ga("send", "event", "slider", "clicknext", "click the next button", 1);
-	  mixpanel.track("HELLOAFHOAFHE");
+	  // ga("send", "event", "slider", "clicknext", "click the next button", 1);
+	  // mixpanel.track("HELLOAFHOAFHE");
 	});
 
 	document.getElementsByClassName('reset')[0].addEventListener('click', function () {
@@ -51,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	  console.log(slide_current);
 	  changePicture(slide_current);
 	});
-
+ 
 });
 
 function changePicture (slide) {
@@ -60,6 +62,9 @@ function changePicture (slide) {
   }
   slides[slide].style.display = "block"; // turn on slide passed to change picture
 };
+
+
+
 
 // document.addEventListener('DOMContentLoaded', function(){
 //   slides = document.getElementsByClassName('catimage');
