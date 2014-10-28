@@ -8,6 +8,9 @@ class PagesController < ApplicationController
   def temp
   end
 
+  def pins
+  end
+
   def ajax
   	render partial: 'ajax', formats: :html
   end

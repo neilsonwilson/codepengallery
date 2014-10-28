@@ -13,85 +13,126 @@
 // = require jquery
 // = require jquery_ujs
 // = require bootstrap
+// = require jquery.turbolinks
 // = require turbolinks
+// = require masonry/jquery.masonry
+// = require_tree .
 
-var slides, slides_total, slide_current;
 
 
 
-document.addEventListener('DOMContentLoaded', function(){
 
-	slides = document.getElementsByClassName('catimage');
-	slides_total = slides.length;
-	slide_current = 0;
-	changePicture(slide_current);
 
-	document.getElementsByClassName('prev')[0].addEventListener('click', function () {
-	  if(slide_current > 0){
-	    slide_current--;
-	  }else{
-	    slide_current = (slides_total - 1);
-	  }
-	  console.log(slide_current);
-	  changePicture(slide_current);
-	});
 
-	document.getElementsByClassName('next')[0].addEventListener('click', function () {
-	  if(slide_current < (slides_total - 1)){
-	    slide_current++;
-	  }else{
-	    slide_current = 0;
-	  }
-	  console.log(slide_current);
-	  changePicture(slide_current);
-	  // ga("send", "event", "slider", "clicknext", "click the next button", 1);
-	  // mixpanel.track("HELLOAFHOAFHE");
-	});
 
-	document.getElementsByClassName('reset')[0].addEventListener('click', function () {
-	  slide_current = 0
-	  console.log(slide_current);
-	  changePicture(slide_current);
-	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ALL CODE BELOW THIS LINE WAS FROM HACKERSHIP JAVASCRIPT
+
+// var slides, slides_total, slide_current;
+
+// document.addEventListener('DOMContentLoaded', function(){
+
+// 	slides = document.getElementsByClassName('catimage');
+// 	slides_total = slides.length;
+// 	slide_current = 0;
+// 	changePicture(slide_current);
+
+// 	document.getElementsByClassName('prev')[0].addEventListener('click', function () {
+// 	  if(slide_current > 0){
+// 	    slide_current--;
+// 	  }else{
+// 	    slide_current = (slides_total - 1);
+// 	  }
+// 	  console.log(slide_current);
+// 	  changePicture(slide_current);
+// 	});
+
+// 	document.getElementsByClassName('next')[0].addEventListener('click', function () {
+// 	  if(slide_current < (slides_total - 1)){
+// 	    slide_current++;
+// 	  }else{
+// 	    slide_current = 0;
+// 	  }
+// 	  console.log(slide_current);
+// 	  changePicture(slide_current);
+// 	  // ga("send", "event", "slider", "clicknext", "click the next button", 1);
+// 	  // mixpanel.track("HELLOAFHOAFHE");
+// 	});
+
+// 	document.getElementsByClassName('reset')[0].addEventListener('click', function () {
+// 	  slide_current = 0
+// 	  console.log(slide_current);
+// 	  changePicture(slide_current);
+// 	});
  
-});
+// });
 
-function changePicture (slide) {
-  for(var i = 0; i < slides_total; i++){
-  slides[i].style.display = 'none'; //turn all pictures off
-  }
-  slides[slide].style.display = "block"; // turn on slide passed to change picture
-};
+// function changePicture (slide) {
+//   for(var i = 0; i < slides_total; i++){
+//   slides[i].style.display = 'none'; //turn all pictures off
+//   }
+//   slides[slide].style.display = "block"; // turn on slide passed to change picture
+// };
 
-
-
-
-
-
-
-
-function ajax() {
-    var xmlhttp;
+// function ajax() {
+//     var xmlhttp;
  
-    xmlhttp = new XMLHttpRequest();
+//     xmlhttp = new XMLHttpRequest();
  
-    xmlhttp.onreadystatechange = function() {
-        if (xmlhttp.readyState == 4 ) {
-           if(xmlhttp.status == 200){
-               document.getElementById("response").innerHTML = xmlhttp.responseText;
-           }
-           else if(xmlhttp.status == 400) {
-              alert('There was an error 400');
-           }
-           else {
-               alert('something else other than 200 was returned');
-           }
-        }
-    }
+//     xmlhttp.onreadystatechange = function() {
+//         if (xmlhttp.readyState == 4 ) {
+//            if(xmlhttp.status == 200){
+//                document.getElementById("response").innerHTML = xmlhttp.responseText;
+//            }
+//            else if(xmlhttp.status == 400) {
+//               alert('There was an error 400');
+//            }
+//            else {
+//                alert('something else other than 200 was returned');
+//            }
+//         }
+//     }
  
-    xmlhttp.open("GET", "/pages/ajax", true);
-    xmlhttp.send();
-}
+//     xmlhttp.open("GET", "/pages/ajax", true);
+//     xmlhttp.send();
+// }
 
 // document.addEventListener('DOMContentLoaded', function(){
 //   slides = document.getElementsByClassName('catimage');
