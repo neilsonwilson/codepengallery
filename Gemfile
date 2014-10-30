@@ -16,6 +16,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'aws-sdk', '~> 1.57.0'
 gem 'masonry-rails', '~>0.2.0'
+gem 'will_paginate', '~> 3.0'
+gem 'will_paginate-bootstrap'
 
 gem 'spring',        group: :development
 
